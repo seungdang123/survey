@@ -67,11 +67,11 @@ body {
   text-align: left;
 }
 
-#text {
+.text {
   margin: 0 0 -4.3px 5px;
 }
 
-.box--main:nth-child(2) #text {
+.box--main:nth-child(2) .text {
   margin: 0 0 -2px 5px;
 }
 
