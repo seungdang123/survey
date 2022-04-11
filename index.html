@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="box--header">
+        <h1>私によく似合う会社は？</h1>
+        <p>入社したい会社に対して好感度を調査します。</p>
+      </div>
+    </header>
+    <main>
+      <form action="https://github.com/seungdang123">
+        <fieldset class="box--main">
+          <legend>入社したい会社のイメージ</legend>
+          <p>入社したい会社と一番近いイメージを持ってる会社は？</p>
+          <label for="line"><input name="favCorp" type="radio" id="line" value="line"></input><span id="text">Line</span></label>
+          <label for="line"><input name="favCorp" type="radio" id="sony" value="sony"></input><span id="text">Sony</span></label>
+          <label for="line"><input name="favCorp" type="radio" id="samsung" value="samsung"></input><span id="text">Samsung</span></label>
+          <label for="line"><input name="favCorp" type="radio" id="apple" value="apple"></input><span id="text">Apple</span></label>
+          <label for="line"><input name="favCorp" type="radio" id="docomo" value="docomo"></input><span id="text">Docomo</span></label>
+        </fieldset>
+
+        <fieldset class="box--main">
+            <legend>一番好きなメッセンジャー</legend>
+            <p>友達と連絡をします、下記中どんなメッセンジャーを利用したいですか (複数選択)</p>
+            <label for="line"><input name="favMessenger" type="checkbox"  value="line"></input><span id="text">Line</span></label>
+            <label for="line"><input name="favMessenger" type="checkbox"  value="kakaotalk"></input><span id="text">Kakaotalk</span></label>
+            <label for="line"><input name="favMessenger" type="checkbox"  value="instagram"></input><span id="text">Instagram</span></label>
+            <label for="line"><input name="favMessenger" type="checkbox"  value="facebook"></input><span id="text">Facebook</span></label>
+            <label for="line"><input name="favMessenger" type="checkbox"  value="wechat"></input><span id="text">Wechat</span></label>
+        </fieldset>
+
+        <fieldset class="box--smaller">
+            <legend>面接で抱負</legend>
+            <p>面接で自分の抱負を一つの文章で話すとしたら？</p>
+            <input type="text" name="desire" placeholder="私の返事">
+        </fieldset>
+
+        <fieldset class="box--smaller">
+            <legend>面接前の覚悟</legend>
+            <p>あなたは今ある企業の最終面接を控えています。 面接会場に入る直前、自分自身に言ってあげたいことは何ですか？</p>
+            <input type="text" name="determination" placeholder="私の返事">
+        </fieldset>
+
+        <fieldset class="box--smaller">
+            <legend>受けたくない面接質問</legend>
+            <p>次の重技術面接の時に聞きたい質問ではないことは？</p>
+            <select name="hateQuestion" required="">
+                <option value="" >選び</option>
+                <option value="htmlcss">HTML＆CSS 関連質問</option>
+                <option value="js">JS 関連質問</option>
+                <option value="react">React 関連質問</option>
+                <option value="database">Database 関連質問</option>
+                <option value="network">Network 関連質問</option>
+              </select>
+        </fieldset>
+
+        <fieldset class="box--smaller">
+            <legend>入社希望する日付</legend>
+            <p>就職を希望する日付を選択してください。</p>
+            <label class="dateTimeLabel" for="date">日付</label>
+            <input type="date" name="date" >
+        </fieldset>
+
+        <fieldset class="box--smaller">
+            <legend>希望する勤務時間帯</legend>
+            <p>業務を始めるのに最も適当な時間を選んでください。</p>
+            <label class="dateTimeLabel" for="startTime">時間</label>
+            <input type="time" name="time" >
+        </fieldset>
+
+        <div class="button--box">
+            <button type="submit" class="submit">提出</button>
+            <button type="reset"  class="reset">リセット</button>
+        </div>
+      </form>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

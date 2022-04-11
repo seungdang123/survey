@@ -1,0 +1,153 @@
+@import "./reset.css";
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #e9f4e3;
+}
+
+#box--header {
+  margin: 12px 0;
+  background-color: white;
+  line-height: 1.5;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: none;
+  border-top: 7px solid #85ac20;
+  padding: 20px;
+  width: 500px;
+  height: 100px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#box--header h1 {
+  width: 100%;
+  text-align: left;
+  font-size: 25px;
+}
+
+#box--header p {
+  width: 100%;
+  text-align: left;
+  font-size: 12px;
+}
+
+.box--main {
+  border-radius: 5px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.box--main p {
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.box--main label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#text {
+  margin: 0 0 -4.3px 5px;
+}
+
+.box--main:nth-child(2) #text {
+  margin: 0 0 -2px 5px;
+}
+
+.box--smaller {
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 500px;
+  height: auto;
+  box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.box--smaller p {
+  margin-bottom: 20px;
+}
+
+.box--smaller input {
+  width: 95%;
+  border: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.box--smaller input:focus {
+  outline: none;
+}
+
+select {
+  width: 40%;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.dateTimeLabel {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.button--box {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.submit {
+  width: 100px;
+  padding: 15px;
+  background-color: #85ac20;
+  color: white;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.reset {
+  box-sizing: border-box;
+  border: none;
+  color: #85ac20;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1.5;
+  font-size: 16px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+legend {
+  display: none;
+}
